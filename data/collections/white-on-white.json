@@ -1,0 +1,29 @@
+{
+  "title": "White on White",
+  "slug": "white-on-white",
+  "description": "",
+  "cover": "Images/white on white/Ancestor Cult, Oil on Canvas, 4.5' x 8', 2023.jpeg",
+  "paintings": [
+    {
+      "title": "Ancestor Cult",
+      "image": "Images/white on white/Ancestor Cult, Oil on Canvas, 4.5' x 8', 2023.jpeg",
+      "medium": "Oil on Canvas",
+      "dimensions": "4.5' x 8'",
+      "year": 2023
+    },
+    {
+      "title": "Morningstar",
+      "image": "Images/white on white/Morningstar, Oil on Canvas, 4' x 4', 2023.jpeg",
+      "medium": "Oil on Canvas",
+      "dimensions": "4' x 4'",
+      "year": 2023
+    },
+    {
+      "title": "Transfiguration",
+      "image": "Images/white on white/Transfiguration, oil on canvas, 3' x 4', 2023.jpeg",
+      "medium": "oil on canvas",
+      "dimensions": "3' x 4'",
+      "year": 2023
+    }
+  ]
+}

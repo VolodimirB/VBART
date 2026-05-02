@@ -1,0 +1,29 @@
+{
+  "title": "Flare",
+  "slug": "flare",
+  "description": "",
+  "cover": "Images/flare/Enjambment, Oil on Canvas, 4' x 4', 2022.jpeg",
+  "paintings": [
+    {
+      "title": "Enjambment",
+      "image": "Images/flare/Enjambment, Oil on Canvas, 4' x 4', 2022.jpeg",
+      "medium": "Oil on Canvas",
+      "dimensions": "4' x 4'",
+      "year": 2022
+    },
+    {
+      "title": "Flare",
+      "image": "Images/flare/Flare, Oil on Canvas, 2' x 3', 2022.jpeg",
+      "medium": "Oil on Canvas",
+      "dimensions": "2' x 3'",
+      "year": 2022
+    },
+    {
+      "title": "Fraternal",
+      "image": "Images/flare/Fraternal, Oil on canvas, 1.5' x 6', 2023.jpeg",
+      "medium": "Oil on canvas",
+      "dimensions": "1.5' x 6'",
+      "year": 2023
+    }
+  ]
+}

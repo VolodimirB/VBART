@@ -1,0 +1,50 @@
+backend:
+  name: git-gateway
+  branch: main
+
+media_folder: "Images"
+public_folder: "/Images"
+
+collections:
+  - name: "about"
+    label: "About"
+    files:
+      - label: "About Page"
+        name: "about"
+        file: "data/about.json"
+        fields:
+          - label: "Artist Statement"
+            name: "statement"
+            widget: "text"
+          - label: "Portrait Photo"
+            name: "portrait"
+            widget: "image"
+            required: false
+          - label: "CV"
+            name: "cv"
+            widget: "list"
+            required: false
+            fields:
+              - { label: "Section Heading", name: "section", widget: "string" }
+              - { label: "Content", name: "content", widget: "text" }
+
+  - name: "collections"
+    label: "Collections"
+    folder: "data/collections"
+    extension: "json"
+    format: "json"
+    create: false
+    fields:
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Slug", name: "slug", widget: "string" }
+      - { label: "Description", name: "description", widget: "text", required: false }
+      - { label: "Cover Image", name: "cover", widget: "string" }
+      - label: "Paintings"
+        name: "paintings"
+        widget: "list"
+        fields:
+          - { label: "Title", name: "title", widget: "string" }
+          - { label: "Image", name: "image", widget: "image" }
+          - { label: "Medium", name: "medium", widget: "string", required: false }
+          - { label: "Dimensions", name: "dimensions", widget: "string", required: false }
+          - { label: "Year", name: "year", widget: "number" }

@@ -1,0 +1,36 @@
+{
+  "title": "Spasm",
+  "slug": "spasm",
+  "description": "",
+  "cover": "Images/spasm/Graze, 2'x3', acrylic and oil on canvas, 2024 .jpeg",
+  "paintings": [
+    {
+      "title": "Graze",
+      "image": "Images/spasm/Graze, 2'x3', acrylic and oil on canvas, 2024 .jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "2' x 3'",
+      "year": 2024
+    },
+    {
+      "title": "Over",
+      "image": "Images/spasm/Over, 3'x4', oil on canvas, 2025.jpeg",
+      "medium": "oil on canvas",
+      "dimensions": "3' x 4'",
+      "year": 2025
+    },
+    {
+      "title": "Scratch",
+      "image": "Images/spasm/Scratch, 2'x3', acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "2' x 3'",
+      "year": 2024
+    },
+    {
+      "title": "Bed",
+      "image": "Images/spasm/bed, 3'x4',oil on canvas, 2025.jpeg",
+      "medium": "oil on canvas",
+      "dimensions": "3' x 4'",
+      "year": 2025
+    }
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title": "Emanation",
+  "slug": "emanation",
+  "description": "",
+  "cover": "Images/emanation/Blue Emanation, 12x16, acrylic and oil on canvas, 2024.jpeg",
+  "paintings": [
+    {
+      "title": "Blue Emanation",
+      "image": "Images/emanation/Blue Emanation, 12x16, acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "12 x 16 in",
+      "year": 2024
+    },
+    {
+      "title": "Orange Emanation",
+      "image": "Images/emanation/Orange Emanation, 3'x3', acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "3' x 3'",
+      "year": 2024
+    },
+    {
+      "title": "Pink Emanation 12x12",
+      "image": "Images/emanation/Pink Emanation 12x12, acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "",
+      "year": 2024
+    },
+    {
+      "title": "Violet Emanation",
+      "image": "Images/emanation/Violet Emanation, 18x18, acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "18 x 18 in",
+      "year": 2024
+    },
+    {
+      "title": "Yellow Emanation",
+      "image": "Images/emanation/Yellow Emanation, 24x30, acrylic and oil on canvas, 2024.jpeg",
+      "medium": "acrylic and oil on canvas",
+      "dimensions": "24 x 30 in",
+      "year": 2024
+    }
+  ]
+}

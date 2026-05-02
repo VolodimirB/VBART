@@ -1,0 +1,22 @@
+{
+  "title": "Conception",
+  "slug": "conception",
+  "description": "",
+  "cover": "Images/conception/Seed, 2'x3', egg tempera on wood, 2024.jpeg",
+  "paintings": [
+    {
+      "title": "Seed",
+      "image": "Images/conception/Seed, 2'x3', egg tempera on wood, 2024.jpeg",
+      "medium": "egg tempera on wood",
+      "dimensions": "2' x 3'",
+      "year": 2024
+    },
+    {
+      "title": "Conception",
+      "image": "Images/conception/conception, 15x20, egg tempera on wood, 2024.jpeg",
+      "medium": "egg tempera on wood",
+      "dimensions": "15 x 20 in",
+      "year": 2024
+    }
+  ]
+}

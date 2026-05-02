@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>About — Veronika Bondarenko</title>
+  <link rel="preconnect" href="https://api.fontshare.com">
+  <link href="https://api.fontshare.com/v2/css?f[]=satoshi@700,500,400&f[]=cormorant-garamond@400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <script src="js/nav.js"></script>
+
+  <main class="page-content">
+    <div class="about-layout" id="about-layout">
+      <div class="about-left">
+        <p class="about-statement" id="about-statement"></p>
+        <hr class="about-divider">
+        <div id="about-cv"></div>
+      </div>
+      <div class="about-right" id="about-right" style="display:none">
+        <img id="about-portrait" src="" alt="Veronika Bondarenko">
+      </div>
+    </div>
+  </main>
+
+  <footer class="site-footer">
+    <div class="footer-inner">
+      <span class="footer-copy">© 2025 Veronika Bondarenko</span>
+      <div class="footer-social">
+        <a href="https://instagram.com/_veronikabondarenko" target="_blank" rel="noopener" aria-label="Instagram">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="2" y="2" width="20" height="20" rx="5" ry="5"/>
+            <circle cx="12" cy="12" r="4"/>
+            <circle cx="17.5" cy="6.5" r="0.5" fill="currentColor" stroke="none"/>
+          </svg>
+        </a>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (async function () {
+      try {
+        const res = await fetch('data/about.json');
+        const data = await res.json();
+
+        const stmt = document.getElementById('about-statement');
+        if (stmt) stmt.textContent = data.statement || '';
+
+        if (data.portrait) {
+          const right = document.getElementById('about-right');
+          const img = document.getElementById('about-portrait');
+          img.src = data.portrait;
+          right.style.display = '';
+        }
+
+        const cvWrap = document.getElementById('about-cv');
+        const divider = document.querySelector('.about-divider');
+        if (cvWrap && data.cv && data.cv.length > 0) {
+          data.cv.forEach(sec => {
+            const section = document.createElement('div');
+            section.className = 'about-cv-section';
+            const entriesHtml = (sec.entries || []).map(e => `
+              <div class="about-cv-entry">
+                <span class="about-cv-entry-name">${e.name}</span>
+                <span class="about-cv-entry-year">${e.year}</span>
+              </div>
+            `).join('');
+            section.innerHTML = `
+              <div class="about-cv-section-title">${sec.section}</div>
+              ${entriesHtml}
+            `;
+            cvWrap.appendChild(section);
+          });
+        } else if (cvWrap && divider) {
+          divider.style.display = 'none';
+        }
+      } catch (e) {
+        // silently fail
+      }
+    })();
+  </script>
+</body>
+</html>

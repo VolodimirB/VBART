@@ -1,0 +1,29 @@
+{
+  "title": "Golden Age",
+  "slug": "golden-age",
+  "description": "",
+  "cover": "Images/golden age/Golden Age I, graphite and charcoal on paper, 20 x 28, 2024.jpeg",
+  "paintings": [
+    {
+      "title": "Golden Age I",
+      "image": "Images/golden age/Golden Age I, graphite and charcoal on paper, 20 x 28, 2024.jpeg",
+      "medium": "graphite and charcoal on paper",
+      "dimensions": "20 x 28 in",
+      "year": 2024
+    },
+    {
+      "title": "Golden Age II",
+      "image": "Images/golden age/Golden Age II, graphite and charcoal on paper, 20 x 28, 2024.jpeg",
+      "medium": "graphite and charcoal on paper",
+      "dimensions": "20 x 28 in",
+      "year": 2024
+    },
+    {
+      "title": "Golden Age III",
+      "image": "Images/golden age/Golden Age III, graphite and charcoal on paper, 20 x 28, 2024.jpeg",
+      "medium": "graphite and charcoal on paper",
+      "dimensions": "20 x 28 in",
+      "year": 2024
+    }
+  ]
+}

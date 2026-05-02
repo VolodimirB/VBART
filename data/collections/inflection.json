@@ -1,0 +1,15 @@
+{
+  "title": "Inflection",
+  "slug": "inflection",
+  "description": "",
+  "cover": "Images/inflection/Inflection, oil on cotton, 3' x 4', 2024.jpeg",
+  "paintings": [
+    {
+      "title": "Inflection",
+      "image": "Images/inflection/Inflection, oil on cotton, 3' x 4', 2024.jpeg",
+      "medium": "oil on cotton",
+      "dimensions": "3' x 4'",
+      "year": 2024
+    }
+  ]
+}
