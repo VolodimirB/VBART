@@ -1,17 +1,6 @@
 // Shared navigation component
 (function () {
-  const COLLECTIONS = [
-    { title: 'Spasm', slug: 'spasm' },
-    { title: 'Conception', slug: 'conception' },
-    { title: 'Emanation', slug: 'emanation' },
-    { title: 'Inflection', slug: 'inflection' },
-    { title: 'Golden Age', slug: 'golden-age' },
-    { title: 'White on White', slug: 'white-on-white' },
-    { title: 'Flare', slug: 'flare' },
-  ];
-
   function getRoot() {
-    // Figure out relative path depth
     const depth = (window.location.pathname.match(/\//g) || []).length - 1;
     return depth > 0 ? '../'.repeat(depth) : '';
   }
@@ -20,7 +9,6 @@
     const p = window.location.pathname;
     if (p.endsWith('about.html') || p.endsWith('/about')) return 'about';
     if (p.endsWith('contact.html') || p.endsWith('/contact')) return 'contact';
-    if (p.includes('collection')) return 'work';
     return 'home';
   }
 
@@ -28,20 +16,19 @@
     const root = getRoot();
     const page = currentPage();
 
-    const dropdownLinks = COLLECTIONS.map(c =>
-      `<a href="${root}collection.html#${c.slug}">${c.title}</a>`
-    ).join('');
-
     const nav = document.createElement('nav');
     nav.className = 'site-nav';
     nav.innerHTML = `
       <div class="nav-inner">
-        <a href="${root}index.html" class="nav-logo">Home</a>
+        <a href="${root}index.html" class="nav-identity">
+          <img class="nav-art" src="${root}Images/emanation/Orange Emanation, 3'x3', acrylic and oil on canvas, 2024.jpeg" alt="">
+          <div class="nav-identity-text">
+            <div class="nav-name">Veronika Bondarenko</div>
+            <hr class="nav-identity-rule">
+            <span class="nav-tagline">Abstract Painter&nbsp;&nbsp;·&nbsp;&nbsp;Toronto</span>
+          </div>
+        </a>
         <ul class="nav-links">
-          <li class="nav-dropdown">
-            <span class="t-nav nav-dropdown-toggle ${page === 'work' ? 'active' : ''}">Work</span>
-            <div class="nav-dropdown-menu">${dropdownLinks}</div>
-          </li>
           <li><a href="${root}about.html" class="t-nav ${page === 'about' ? 'active' : ''}">About</a></li>
           <li><a href="${root}contact.html" class="t-nav ${page === 'contact' ? 'active' : ''}">Contact</a></li>
         </ul>
@@ -51,20 +38,12 @@
       </div>
     `;
 
-    // Mobile nav overlay
-    const mobileCollLinks = COLLECTIONS.map(c =>
-      `<a href="${root}collection.html#${c.slug}">${c.title}</a>`
-    ).join('');
-
     const mobileNav = document.createElement('div');
     mobileNav.className = 'mobile-nav';
     mobileNav.innerHTML = `
       <button class="mobile-nav-close" aria-label="Close menu">×</button>
-      ${mobileCollLinks}
-      <div class="mobile-nav-meta">
-        <a href="${root}about.html" class="t-nav">About</a>
-        <a href="${root}contact.html" class="t-nav">Contact</a>
-      </div>
+      <a href="${root}about.html" class="t-nav">About</a>
+      <a href="${root}contact.html" class="t-nav">Contact</a>
     `;
 
     document.body.insertBefore(nav, document.body.firstChild);

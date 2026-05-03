@@ -1,5 +1,15 @@
 // Collection page: load JSON, render cards, lightbox
 (function () {
+  const COLLECTIONS = [
+    { title: 'Spasm',         slug: 'spasm' },
+    { title: 'Conception',    slug: 'conception' },
+    { title: 'Emanation',     slug: 'emanation' },
+    { title: 'Inflection',    slug: 'inflection' },
+    { title: 'Golden Age',    slug: 'golden-age' },
+    { title: 'White on White',slug: 'white-on-white' },
+    { title: 'Flare',         slug: 'flare' },
+  ];
+
   let paintings = [];
   let currentIndex = 0;
 
@@ -208,11 +218,19 @@
     if (e.key === 'ArrowRight') nextPainting();
   });
 
+  // ── Sidebar ───────────────────────────────────────────────
+  function buildSidebar(activeSlug) {
+    const nav = document.getElementById('sidebar-nav');
+    if (!nav) return;
+    nav.innerHTML = COLLECTIONS.map(c => `
+      <a href="collection.html#${c.slug}" class="sidebar-link${c.slug === activeSlug ? ' active' : ''}">${c.title}</a>
+    `).join('');
+  }
+
   // ── Render cards ─────────────────────────────────────────
-  function renderCards(data) {
+  function renderCards(data, slug) {
     paintings = data.paintings || [];
 
-    // Page title
     document.title = `${data.title} — Veronika Bondarenko`;
     const titleEl = document.getElementById('collection-title');
     if (titleEl) titleEl.textContent = data.title;
@@ -226,6 +244,8 @@
         descEl.style.display = 'none';
       }
     }
+
+    buildSidebar(slug);
 
     const grid = document.getElementById('collection-grid');
     if (!grid) return;
@@ -260,7 +280,7 @@
       const res = await fetch(`data/collections/${slug}.json`);
       if (!res.ok) throw new Error('Not found');
       const data = await res.json();
-      renderCards(data);
+      renderCards(data, slug);
     } catch (e) {
       document.getElementById('collection-title').textContent = 'Collection not found';
     }
