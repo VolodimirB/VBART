@@ -1,6 +1,34 @@
 {
-  "statement": "Veronika Bondarenko is an artist living and working in Toronto, Ontario. Her interdisciplinary practice surrounds conceptions of colour, light, and the enduring or timeless, as experienced through process-oriented technical approaches and prolonged meditative looking. She is currently pursuing a BFA in Drawing and Painting from OCAD University.",
+  "statement": [
+    "Veronika Bondarenko is a Toronto-based painter with a BFA in Drawing and Painting from OCAD University. Working primarily in oil on canvas, she builds layered abstract paintings where colour, pattern, and bodily suggestion hover at the edge of recognition. Her practice treats painting as a threshold system: a place where atmosphere, memory, material process, and perception remain in motion rather than resolving into a fixed image.",
+    "Through layering, erasure, abrasion, veiling, and revision, Bondarenko constructs surfaces that feel simultaneously organic, psychological, and spatial. References to anatomy, landscape, cosmology, fruit, seed, vessel, and interior space emerge and recede without becoming literal. Informed by phenomenology, process-based thought, and Ukrainian cultural memory, her work approaches abstraction as a material language for instability, transformation, and sustained looking."
+  ],
   "cv": [
+    {
+      "section": "Selected Highlights",
+      "entries": [
+        {
+          "name": "BFA Drawing and Painting, OCAD University",
+          "year": "2026"
+        },
+        {
+          "name": "Solo exhibition: Fruits in the Night, Ada Slaight Gallery, Toronto",
+          "year": "2025"
+        },
+        {
+          "name": "Selected exhibitions include Gallery 1313, OCAD University, Neilson Park Creative Centre, Youthful Vengeance Gallery, and I. P. Kavaleridze Museum-Workshop, Kyiv",
+          "year": ""
+        },
+        {
+          "name": "Arts instructor at Neilson Park Creative Centre",
+          "year": ""
+        },
+        {
+          "name": "Active in artist-run, academic, community, and collaborative exhibition contexts in Toronto",
+          "year": ""
+        }
+      ]
+    },
     {
       "section": "Education",
       "entries": [
@@ -96,5 +124,10 @@
       ]
     }
   ],
-  "portrait": ""
+  "portrait": "Picture/Bondarenko_Veronika_Profile_Photo_2026.jpeg",
+  "abstract": [
+    "My work uses abstraction as a material and perceptual language for atmospheric, bodily, and psychological states. Through layering, erasure, abrasion, veiling, glazing, and revision, I construct paintings that gather slowly rather than resolve immediately. Forms emerge, recede, and return altered, hovering between anatomy, landscape, cosmology, fruit, seed, vessel, and interior space.",
+    "I am interested in the threshold before recognition settles, when an image is active but not yet fixed. Rather than treating ambiguity as vagueness, I use it as a structured instability: a way of holding multiple associations active at once. Colour, pattern, surface pressure, and spatial relation become ways of organizing perception, asking the viewer to stay with an image long enough for it to change.",
+    "Informed by phenomenology, process-based thought, Ukrainian cultural memory, and sustained studio practice, my paintings approach meaning as something formed through duration, relation, and embodied looking. The work moves between image and environment, structure and atmosphere, control and dissolution."
+  ]
 }

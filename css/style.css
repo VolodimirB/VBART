@@ -285,6 +285,15 @@ img {
   font-size: 14px;
   line-height: 1.8;
   color: var(--text-secondary);
+  text-align: justify;
+}
+
+.home-statement p {
+  margin: 0 0 1.2em;
+}
+
+.home-statement p:last-child {
+  margin-bottom: 0;
 }
 
 .home-right {
@@ -690,6 +699,14 @@ img {
   color: var(--text);
 }
 
+.about-statement p {
+  margin: 0 0 1.2em;
+}
+
+.about-statement p:last-child {
+  margin-bottom: 0;
+}
+
 .about-divider {
   border: none;
   border-top: 1px solid var(--border);
@@ -713,11 +730,11 @@ img {
 
 .about-cv-section-title {
   font-family: 'Satoshi', sans-serif;
-  font-weight: 400;
+  font-weight: 700;
   letter-spacing: 0.06em;
   text-transform: uppercase;
   font-size: 12px;
-  color: var(--text-secondary);
+  color: var(--text);
   margin-bottom: 8px;
 }
 
@@ -752,10 +769,32 @@ img {
   flex-shrink: 0;
 }
 
+.about-right {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
 .about-right img {
   width: 100%;
   height: auto;
   display: block;
+}
+
+.about-abstract {
+  font-family: 'Satoshi', sans-serif;
+  font-weight: 400;
+  font-size: clamp(13px, 1.3vw, 15px);
+  line-height: 1.8;
+  color: var(--text-secondary);
+}
+
+.about-abstract p {
+  margin: 0 0 1.2em;
+}
+
+.about-abstract p:last-child {
+  margin-bottom: 0;
 }
 
 /* ─── Contact page ─────────────────────────────────────────── */

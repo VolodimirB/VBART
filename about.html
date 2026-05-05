@@ -14,12 +14,13 @@
   <main class="page-content">
     <div class="about-layout" id="about-layout">
       <div class="about-left">
-        <p class="about-statement" id="about-statement"></p>
+        <div class="about-statement" id="about-statement"></div>
         <hr class="about-divider">
         <div id="about-cv"></div>
       </div>
-      <div class="about-right" id="about-right" style="display:none">
-        <img id="about-portrait" src="" alt="Veronika Bondarenko">
+      <div class="about-right" id="about-right">
+        <img id="about-portrait" src="" alt="Veronika Bondarenko" style="display:none">
+
       </div>
     </div>
   </main>
@@ -46,13 +47,15 @@
         const data = await res.json();
 
         const stmt = document.getElementById('about-statement');
-        if (stmt) stmt.textContent = data.statement || '';
+        if (stmt && data.statement) {
+          const paragraphs = Array.isArray(data.statement) ? data.statement : [data.statement];
+          stmt.innerHTML = paragraphs.filter(Boolean).map(p => `<p>${p}</p>`).join('');
+        }
 
         if (data.portrait) {
-          const right = document.getElementById('about-right');
           const img = document.getElementById('about-portrait');
           img.src = data.portrait;
-          right.style.display = '';
+          img.style.display = '';
         }
 
         const cvWrap = document.getElementById('about-cv');
